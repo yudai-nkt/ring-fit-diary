@@ -33,5 +33,9 @@
     "prettier": "^2.3.2",
     "typescript": "4.3.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yudai-nkt/ring-fit-diary.git"
+  }
 }
