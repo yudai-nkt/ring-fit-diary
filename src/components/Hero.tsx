@@ -5,7 +5,7 @@ export const Hero = ({ title }: { title: string }) => (
     justifyContent="center"
     alignItems="center"
     height="100vh"
-    bgGradient="linear(to-l, #7928CA, #FF0080)"
+    bgGradient="linear(to-r, #f82303, #fcd701)"
     bgClip="text"
   >
     <Heading fontSize="6vw">{title}</Heading>
