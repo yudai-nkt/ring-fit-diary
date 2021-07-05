@@ -1,6 +1,7 @@
 import { Flex, Heading } from "@chakra-ui/react";
+import type { VFC } from "react";
 
-export const Hero = ({ title }: { title: string }) => (
+export const Hero: VFC<{ title?: string }> = ({ title }) => (
   <Flex
     justifyContent="center"
     alignItems="center"

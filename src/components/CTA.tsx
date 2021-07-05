@@ -1,8 +1,9 @@
 import { Link as ChakraLink, Button } from "@chakra-ui/react";
+import type { VFC } from "react";
 
 import { Container } from "./Container";
 
-export const CTA = () => (
+export const CTA: VFC = () => (
   <Container
     flexDirection="row"
     position="fixed"

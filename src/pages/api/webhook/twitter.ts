@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 const TWITTER_BOT_API_SECRET_KEY = process.env.TWITTER_BOT_API_SECRET_KEY ?? "";
 
-const handler = (req: NextApiRequest, res: NextApiResponse) => {
+const handler = (req: NextApiRequest, res: NextApiResponse): void => {
   const { method } = req;
   switch (method) {
     case "GET": {

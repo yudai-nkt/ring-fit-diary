@@ -1,14 +1,7 @@
-import {
-  Icon,
-  IconProps,
-  Text,
-  VStack,
-  StackProps,
-  SimpleGrid,
-  SimpleGridProps,
-} from "@chakra-ui/react";
-import { IconType } from "react-icons";
-import { VFC } from "react";
+import type { IconProps, StackProps, SimpleGridProps } from "@chakra-ui/react";
+import { Icon, Text, VStack, SimpleGrid } from "@chakra-ui/react";
+import type { IconType } from "react-icons";
+import type { VFC } from "react";
 
 type FeaturesProps = {
   features: Array<{

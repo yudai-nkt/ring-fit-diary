@@ -1,7 +1,8 @@
 import { Button, Flex, Heading, Spacer } from "@chakra-ui/react";
 import { signIn, useSession } from "next-auth/client";
+import type { VFC } from "react";
 
-export const Header = () => {
+export const Header: VFC = () => {
   const [session] = useSession();
   return (
     <Flex

@@ -1,6 +1,7 @@
 import { Text } from "@chakra-ui/react";
 import { IoIosFitness } from "react-icons/io";
 import { IoLogoTwitter, IoBarChartSharp } from "react-icons/io5";
+import type { VFC } from "react";
 
 import { Hero } from "../components/Hero";
 import { Container } from "../components/Container";
@@ -9,7 +10,7 @@ import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import { Header } from "../components/Header";
 import { Features } from "../components/Features";
 
-const Index = () => {
+const Index: VFC = () => {
   return (
     <Container height="100vh">
       <Main>
