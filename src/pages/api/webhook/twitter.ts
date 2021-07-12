@@ -18,7 +18,7 @@ const isAtMentionPayload = (arg: unknown): arg is AtMentionPayLoad => {
   const isObject = (arg: unknown): arg is Record<string, unknown> => {
     return typeof arg === "object" && arg != null;
   };
-  const keysOFAtMentionPayload = [
+  const keysOfAtMentionPayload = [
     "for_user_id",
     "user_has_blocked",
     "tweet_create_events",
@@ -26,7 +26,7 @@ const isAtMentionPayload = (arg: unknown): arg is AtMentionPayLoad => {
 
   return (
     isObject(arg) &&
-    Object.keys(arg).every((key) => keysOFAtMentionPayload.includes(key))
+    Object.keys(arg).every((key) => keysOfAtMentionPayload.includes(key))
   );
 };
 
