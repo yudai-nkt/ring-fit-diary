@@ -45,7 +45,10 @@ const shouldBeSentToCloudVision: (tweet: TweetV1) => boolean = (tweet) => {
   const isRelatedToRFA =
     Array.isArray(hashtags) &&
     hashtags.map(({ text }) => text).includes("RingFitAdventure");
-  const isTweetedViaSwitch = source === "Nintendo Switch Share";
+  // Source label returned by v1.1 API seems to be an <a> tag.
+  const isTweetedViaSwitch =
+    source ===
+    '<a href="https://www.nintendo.com/countryselector" rel="nofollow">Nintendo Switch Share</a>';
   const ifContainPictures = Array.isArray(media) && media[0].type === "photo";
   return isRelatedToRFA && isTweetedViaSwitch && ifContainPictures;
 };
